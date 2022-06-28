@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Center(
       child: ElevatedButton(
         onPressed: () {},
-        child: const Text('Flutter Basics'),
+        child: const Text('Learn Flutter'),
       ),
     );
   }
