@@ -24,6 +24,10 @@ class RootPage extends StatefulWidget {
 }
 
 class _RootPageState extends State<RootPage> {
+  int currentPage = 0;
+
+  get label => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,8 +35,17 @@ class _RootPageState extends State<RootPage> {
         title: const Text('Flutter basics'),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          debugPrint("Floating action button");
+        },
         child: const Icon(Icons.lens_blur_outlined),
+      ),
+      bottomNavigationBar: NavigationBar(
+        destinations: const [
+          NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+          NavigationDestination(icon: Icon(Icons.favorite), label: 'Favorite'),
+          NavigationDestination(icon: Icon(Icons.list_outlined), label: 'List')
+        ],
       ),
     );
   }
