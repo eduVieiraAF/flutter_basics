@@ -1,16 +1,9 @@
-# flutter_basics
+<img src="https://tech.pelmorex.com/wp-content/uploads/2020/10/flutter.png" width="224" height="106"/>
 
-A new Flutter project.
+# Flutter basics
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### This repo is a starting point.
+### This will serve as a collection of the fundamentals of Flutter programming.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
