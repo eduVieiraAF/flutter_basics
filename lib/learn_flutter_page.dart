@@ -23,7 +23,23 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
       ),
       body: Column(
         children: [
-          Image.asset('images/einstein.jpg')
+          Image.asset('images/einstein.jpg'),
+          const SizedBox(height: 10),
+          Container(
+            margin: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(5.0),
+            color: Colors.blueGrey,
+            width: double.infinity,
+            child: const Center(
+              child: Text(
+                "Albert Einstein",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
+          const Divider(
+            color: Colors.blueGrey,
+          ),
         ],
       ),
     );
