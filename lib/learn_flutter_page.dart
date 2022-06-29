@@ -21,6 +21,11 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
           icon: const Icon(Icons.arrow_back_ios_rounded),
         ),
       ),
+      body: Column(
+        children: [
+          Image.asset('images/einstein.jpg')
+        ],
+      ),
     );
   }
 }
