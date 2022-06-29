@@ -26,9 +26,9 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
           Image.asset('images/einstein.jpg'),
           const SizedBox(height: 10),
           Container(
-            margin: const EdgeInsets.all(10.0),
+            margin: const EdgeInsets.all(2.0),
             padding: const EdgeInsets.all(5.0),
-            color: Colors.blueGrey,
+            color: Colors.grey.shade900,
             width: double.infinity,
             child: const Center(
               child: Text(
@@ -40,6 +40,12 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
           const Divider(
             color: Colors.blueGrey,
           ),
+          ElevatedButton(
+            onPressed: () {
+              debugPrint("Elevated button was clicked");
+            },
+            child: const Text("Elevated button"),
+          )
         ],
       ),
     );
