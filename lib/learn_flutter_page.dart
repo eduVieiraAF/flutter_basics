@@ -29,11 +29,14 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
             margin: const EdgeInsets.all(2.0),
             padding: const EdgeInsets.all(5.0),
             color: Colors.grey.shade900,
+            height: 40,
             width: double.infinity,
+            //transform: Matrix4.rotationZ(0.1),
             child: const Center(
               child: Text(
                 "Albert Einstein",
-                style: TextStyle(color: Colors.white),
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
               ),
             ),
           ),
