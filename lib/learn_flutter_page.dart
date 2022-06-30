@@ -60,7 +60,27 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
               debugPrint("Text button was clicked");
             },
             child: const Text("Text button"),
-          )
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: const [
+              Icon(Icons.local_fire_department_rounded, color: Colors.deepOrange,),
+              Text("Row widget"),
+              Icon(Icons.house_rounded, color: Colors.indigo,),
+              Text("Spaced evenly"),
+              Icon(Icons.alarm_on_rounded, color: Colors.green,),
+            ],
+          ),
+           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Icon(Icons.add_ic_call_rounded, color: Colors.blueGrey,),
+              Text(" Row widget "),
+              Icon(Icons.face_rounded, color: Colors.brown),
+              Text(" Spaced in center "),
+              Icon(Icons.gamepad_rounded, color: Colors.red,),
+            ],
+          ),
         ],
       ),
     );
