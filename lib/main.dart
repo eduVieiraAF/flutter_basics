@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basics/home_page.dart';
+import 'package:flutter_basics/profile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +27,10 @@ class RootPage extends StatefulWidget {
 
 class _RootPageState extends State<RootPage> {
   int currentPage = 0;
+  List<Widget> pages = const [
+     HomePage(),
+     ProfilePage()
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -33,23 +38,18 @@ class _RootPageState extends State<RootPage> {
       appBar: AppBar(
         title: const Text('Flutter basics'),
       ),
-
-      body: const HomePage(),
-
+      body: pages[currentPage],
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           debugPrint("Floating action button");
         },
-        
         child: const Icon(Icons.lens_blur_outlined),
       ),
-      
       bottomNavigationBar: NavigationBar(
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
           NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
         ],
-        
         onDestinationSelected: (int index) {
           setState(() {
             currentPage = index;
