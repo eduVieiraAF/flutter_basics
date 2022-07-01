@@ -23,6 +23,12 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
           },
           icon: const Icon(Icons.arrow_back_ios_rounded),
         ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.grade_rounded),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -39,8 +45,8 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
               child: const Center(
                 child: Text(
                   "Albert Einstein",
-                  style:
-                      TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               ),
             ),
@@ -124,7 +130,8 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
                     isCheckBox = newBool;
                   });
                 }),
-                Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9NNoU91dgcnpfjiH1WXVV9nCu9GvB-7OpUg&usqp=CAU')
+            Image.network(
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9NNoU91dgcnpfjiH1WXVV9nCu9GvB-7OpUg&usqp=CAU')
           ],
         ),
       ),
